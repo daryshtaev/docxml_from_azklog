@@ -21,9 +21,9 @@ for line in file_lines:
 		# Убираем теги <TASK>, </TASK> и переносы строк:
 		line = line.replace('<TASK>', '').replace('</TASK>', '').replace('\n', '')
 		# Вычисляем DOCUMENT_ID:
-		document_id = get_substring_by_word(line, ' DOCUMENT_ID = ')
+		document_id = get_substring_by_word(line, ' DOCUMENT_ID=')
 		# Вычисляем DOC_NUMBER:
-		doc_number = get_substring_by_word(line, ' DOC_NUMBER = ')
+		doc_number = get_substring_by_word(line, ' DOC_NUMBER=')
 		# Делим по блокам "<DOCUMENT":
 		splitter = '<DOCUMENT '
 		split_line = line.split(splitter)
