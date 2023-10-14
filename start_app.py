@@ -35,9 +35,6 @@ for line in file_lines:
 		dirname = f'c:/tmp/100packets/docNumber_documentId/{doc_number}_{document_id}'
 		filename = f'doc_{doc_number}_{document_id}.xml'
 		Path(dirname).mkdir(parents=True, exist_ok=True)
-		# Создадим в папке файл для документа и заполним его:
-		# out_file = open(f'{dirname}/{filename}', 'w', encoding='utf-8')
-		# out_file.write(f'{splitter}{split_lines[1]}')
 		i = 0
 		attaches = []
 		for sline in split_lines:
