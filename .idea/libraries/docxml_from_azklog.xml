@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="docxml_from_azklog">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/100packets_with_src_file.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Сведения.zip!/" />
+      <root url="jar://$PROJECT_DIR$/100packets(XML from LOG).zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
