@@ -2,7 +2,10 @@ from pathlib import Path
 from xml.etree.ElementTree import fromstring, ElementTree
 import base64
 
+# Файл для обработки:
 src_file = "azk2_xml.log"
+# Папка для вывода результатов:
+result_dir = "c:/tmp/100packets/docNumber_documentId/"
 
 
 def get_substring_by_word(text, word, right_limiter=' '):
@@ -32,7 +35,7 @@ for line in file_lines:
 		# Убираем первый элемент из списка, потому что там просто splitter:
 		split_lines.pop(0)
 		# Создадим папку для файлов документа с именем по шаблону "docNumber_documentId":
-		dirname = f'c:/tmp/100packets/docNumber_documentId/{doc_number}_{document_id}'
+		dirname = f'{result_dir}/{doc_number}_{document_id}'
 		filename = f'doc_{doc_number}_{document_id}.xml'
 		Path(dirname).mkdir(parents=True, exist_ok=True)
 		i = 0
