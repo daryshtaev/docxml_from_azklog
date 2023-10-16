@@ -5,10 +5,10 @@ import base64
 src_file = "azk2_xml.log"
 
 
-def get_substring_by_word(text, word, right_imiter=' '):
+def get_substring_by_word(text, word, right_limiter=' '):
 	len_word = len(word)
 	pos_word = text.find(word)
-	end_word = text[pos_word+len_word:].find(right_imiter)
+	end_word = text[pos_word+len_word:].find(right_limiter)
 	result = text[pos_word+len_word:pos_word+len_word+end_word]
 	result = result.replace('"', '')
 	return result
