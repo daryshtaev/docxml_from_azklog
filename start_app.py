@@ -1,3 +1,12 @@
+# ver. 1.6
+# Обработка лога, который содержит ответы на XML-запрос типа:
+# <TASK>
+# 	<DOCUMENT DOCUMENT_ID="1125847111" action="read" class="22" mode="ExInfo"/>
+# 	<DOCUMENT DOCUMENT_ID="1125847111" action="getAttachedFileNames"/>
+# 	<DOCUMENT DOCUMENT_ID="1125847111" NAME="Аванс 157-21 ПП-№ 265290 от 22.12.2022 (120.pdf" STORAGE_ID="28051373" action="get_attached_file"/>
+# 	<DOCUMENT DOCUMENT_ID="1125847111" NAME="Акт 301201.pdf" STORAGE_ID="28051374" action="get_attached_file"/>
+# </TASK>
+
 from pathlib import Path
 from xml.etree.ElementTree import fromstring, ElementTree
 import base64
